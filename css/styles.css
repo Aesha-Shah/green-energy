@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Domine:700|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+
+/* Fonts used: Body:- Roboto, Heading:-Domine font, Sacramento */
+/* Colors used: #DDD, #F5F5F5, #6495ED, #93DB70, #86C67C GREEN */
+
+body {
+	margin-top: 0px;
+	font-family: 'Roboto', sans-serif;
+	background-image: url("../img/background.jpg");
+}
+
+
+/* Mobile view ------------------------------------------------*/
+
+.box {
+	position: relative;
+	background-color: white;
+	width: 30rem;
+	padding: 20px 0px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.btn .controls {
+	margin-bottom: 20px;
+	display: inline;
+}
+
+button {
+	background-color: green;
+	color: white;
+	width: 10%;
+	padding: 10px;
+}
+
+ul {
+	padding-left: 0px;
+}
+
+.controls {
+	margin: 2em;
+}
+
+.navigation a {
+	font-family: 'Domine', serif;
+	text-decoration: none;
+	color: black;
+	font-size: 1rem;
+}
+
+.navigation {
+	margin: 1rem 2em;
+}
+
+.home:hover {
+	background-color: #86C67C;
+	cursor: pointer;
+}
+
+.contact:hover {
+	background-color: #86C67C;
+	cursor: pointer;
+}
+
+.home, .about, .contact, .blog {
+	margin-bottom: 10px;
+	border-bottom: 0.1em solid black;
+	padding: 10px 10px;
+}
+
+.about:hover {
+	background-color: #86C67C;
+	cursor: pointer;
+}
+
+.blog:hover {
+	background-color: #86C67C;
+	cursor: pointer;
+}
+
+/* Masthead */
+
+.mhead img {
+	width: 26rem;
+	margin-top: 0px;
+}
+
+.mhead h1 {
+	font-size: 1.8em;
+	position: absolute;
+	top: 200px;
+	left: 130px;
+	color: white;
+	font-family: 'Sacramento', cursive;
+}
+
+h1 {
+	padding: 2rem;
+	font-family: 'Domine', serif;
+	font-size: 1.2rem;
+}
+
+p {
+	padding: 0rem 2rem;
+	line-height: 1.5;
+	font-size: 0.75rem;
+}
+
+img {
+    width: 26rem;
+    /*margin: auto;*/
+	padding: 0rem 2rem;
+}
+
+.current-content {
+	display: grid;
+	grid-template-columns: repeat(4, 1f);
+	grid-gap: 0.5em;
+}
+
+/* Footer */
+footer {
+	margin-top: 50px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+
+/* 50rem Tablet and Desktop view --------------------------------------------- */
+
+@media (min-width: 35rem) {
+
+	.box {
+		position: relative;
+		width: 55rem;
+		margin: auto;
+	}
+
+	.navigation {
+		display: grid;
+		grid-template-columns: repeat(4, 1f);
+		text-align: center;
+	}
+
+	.home{
+		grid-column: 1/2;
+	}
+
+	.about {
+		grid-column: 2/3;
+	}
+
+	.contact{
+		grid-column: 3/4;
+	}
+
+	.blog {
+		grid-column: 4/5;
+	}
+
+	.mhead img {
+		width: 51rem;
+		margin-top: 0px;
+	}
+
+	.mhead h1 {
+		font-size: 3.5em;
+		position: absolute;
+		top: 40px;
+		left: 270px;
+		color: white;
+	}
+
+	.current-content {
+		display: grid;
+		grid-template-columns: repeat(4, 1f);
+	}
+
+	h1 {
+		grid-column: 1/2;
+		font-size: 1.5rem;
+	}
+
+	img {
+		grid-column: 1/2;
+		grid-row: 2;
+	}
+
+	p {
+		grid-column: 2/5;
+		grid-row: 2;
+		font-size: 1rem;
+	}
+}
